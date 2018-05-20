@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Simple Car AI</title>
+</head>
+
+<body>
+
+  <div class="scene">
+    <div class="grass" id="debugTop"></div>
+
+    <div class="road" id="road">
+      <div class="ai" id="ai">
+        <div id="sensor_1">1</div>
+        <div id="sensor_2">2</div>
+        <div id="sensor_3">3</div>
+      </div>
+      <div class="wall" id="wall"></div>
+    </div>
+
+
+    <div class="grass"></div>
+  </div>
+
+  <div class="debug">
+    <!-- <textarea disabled id="debugTextArea" class="debugTextArea"></textarea> -->
+    <input type="text" id="stepsDone" disabled value="0">
+    <input id="startSimulation" type="button" value="Start">
+    <input id="stopSimulation" type="button" value="Stop">
+
+    <div class="debugTable">
+      <table>
+        <tr>
+          <th id="t_ai_zone">AI Zone</th>
+          <th id="t_wall_zone">Wall Zone</th>
+          <th id="t_exp_success">Experience Success</th>
+          <th id="t_exp_sugestion">Experience sugestion</th>
+          <th id="t_trying">Trying</th>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      </table>
+
+      <table>
+        <tr>
+          <th>AI Zone | Wall Zone | Do </th>
+          <th>Success</th>
+        </tr>
+        <tr>
+          <td class="exp_1">0 0 0</td>
+          <td class="succ_1">-</td>
+        </tr>
+        <tr>
+          <td class="exp_2">0 0 1</td>
+          <td class="succ_2">-</td>
+        </tr>
+        <tr>
+          <td class="exp_3">0 1 0</td>
+          <td class="succ_3">-</td>
+        </tr>
+        <tr>
+          <td class="exp_4">0 1 1</td>
+          <td class="succ_4">-</td>
+        </tr>
+        <tr>
+          <td class="exp_5">1 0 0</td>
+          <td class="succ_5">-</td>
+        </tr>
+        <tr>
+          <td class="exp_6">1 0 1</td>
+          <td class="succ_6">-</td>
+        </tr>
+        <tr>
+          <td class="exp_7">1 1 0</td>
+          <td class="succ_7">-</td>
+        </tr>
+        <tr>
+          <td class="exp_8">1 1 1</td>
+          <td class="succ_8"></td>
+        </tr>
+      </table>
+
+    </div>
+
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

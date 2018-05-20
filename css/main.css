@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #111;
+  margin: 0;
+  padding: 0;
+}
+
+.scene {
+  display: flex;
+  flex-direction: column;
+}
+
+.grass {
+  background: #0aa50a;
+  height: 100px;
+}
+
+.road {
+  position: relative;
+  background: #636363;
+  height: calc(97vh - 200px);
+}
+
+.ai, #ai {
+  position: absolute;
+  top: 50px;
+  width: 100px;
+  height: 50px;
+  background: #fff;
+}
+
+.wall {
+  position: absolute;
+  right: 0;
+  background: #e7410e;
+  width: 50px;
+  height: 100px;
+}
+
+#sensor_1,
+#sensor_2,
+#sensor_3 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  opacity: 0.5;
+}
+
+#sensor_1 {
+  top: -50px;
+  left: 50px;
+}
+
+#sensor_2 {
+  left: 100px;
+  width: 500px;
+}
+
+#sensor_3 {
+  top: 50px;
+  left: 50px;
+}
+
+.debug {
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+
+.debugTextArea {
+  width: 400px;
+  height: 150px;
+}
+
+.debug input[type=text] {
+  width: 60px;
+  padding: 8px;
+  border: none;
+  background: #fff;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.debug input[type=button] {
+  background: #fff;
+  box-shadow: 1px 1px 20px #111, 1px 1px 10px #111;
+  border: none;
+  padding: 8px 20px;
+  margin: 20px 0;
+}
+
+#debugTop {
+  color: #fff;
+}
+
+.debugTable {
+  text-align: center;
+}
+
+.debugTable table {
+  width: 100%;
+  background: #fff;
+}
+
+.debugTable table:nth-child(2) {
+  margin-top: 20px;
+}
+
+.debugTable table td {
+  padding: 8px;
+  background: #eeeeee;
+}
+
+.debugTable table th {
+  padding: 6px;
+}
