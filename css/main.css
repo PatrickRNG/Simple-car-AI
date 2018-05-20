@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif, Verdana;  
 }
 
 body {
@@ -14,6 +15,7 @@ body {
 }
 
 .grass {
+  position: relative;
   background: #0aa50a;
   height: 100px;
 }
@@ -117,4 +119,12 @@ body {
 
 .debugTable table th {
   padding: 6px;
+}
+
+.grass2::after {
+  content: 'Scroll down to see the debug table and start the simulation';
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  color: #fff;
 }
